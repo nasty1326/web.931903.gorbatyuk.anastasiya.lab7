@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <title>Лабораторная 7</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js" defer></script>
+  <script src="lab7.js" text="text/javascript" defer></script>
+</head>
+
+<body>
+  <div><input id="amount-of-figures" type="number" min="0" oninput="this.value = Math.abs(this.value)"></div>
+  <div>
+    <button class="draw-button" shape-type="square">Квадрат</button>
+    <button class="draw-button" shape-type="triangle">Треугольник</button>
+    <button class="draw-button" shape-type="circle">Круг</button>
+  </div>
+
+  <div id="wrapper"></div>
+
+</body>
+
+</html>

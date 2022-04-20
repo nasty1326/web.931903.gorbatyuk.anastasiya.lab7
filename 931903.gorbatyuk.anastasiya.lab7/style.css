@@ -1,0 +1,36 @@
+:root {
+   --squareColor: rgba(255,0,0,0.85);
+   --triangleColor: rgba(0,0,255,0.85);
+   --circleColor: rgba(0,255,0,0.85);
+ }
+ 
+ html, body {
+   margin: 0;
+   padding: 0;
+   width: 100%;
+   height: 100%;
+ }
+ 
+ .square {/*квадрат*/
+   position: absolute;
+   border: 1px solid black;
+   background-color: var(--squareColor)
+ }
+ 
+ .triangle { /*треугольник*/
+   position: absolute;
+   clip-path: polygon(0% 100%, 50% 0%, 100% 100%);
+   background-color: var(--triangleColor);
+ }
+ 
+ .circle {/*круг*/
+   position: absolute;
+   border: 1px solid black;
+   background-color: var(--circleColor);
+ }
+ 
+ 
+ .selected-shape { 
+   background-color: yellow;
+ }
+ 
